@@ -1,5 +1,5 @@
 # WifiMarquee
-An ESP8266 based scrolling marquee that can be controlled through a web-based wifi interface.
+An ESP8266 based scrolling marquee written in MicroPython that can be controlled through a web-based wifi interface.
 
 # Requirements:
 
@@ -7,7 +7,7 @@ An ESP8266 based scrolling marquee that can be controlled through a web-based wi
 
 # Wiring:
 
- Wemos D1 Mini     MAX7219 LED Matrix
+**Wemos D1 Mini**  <-->  **MAX7219 LED Matrix**
  
     5V         <-->     VCC
     
