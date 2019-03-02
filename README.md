@@ -23,6 +23,29 @@ An ESP8266 based scrolling marquee written in MicroPython that can be controlled
     
     D5 (SCK)   <-->     CLK
 
+# Installation:
+
+On a device with MicroPython installed, put the following files on the device using some method such as AMPY...
+
+  + root
+  
+    + drivers
+    
+      + max7219m.py
+      
+    + wwwroot
+    
+      + captive.html
+      
+      + marquee.html
+      
+    dnsquery.py
+    
+    main.py
+    
+    marquee.py
+    
+  
 # Credit:
 
 MicroPython MAX7219 Driver:
