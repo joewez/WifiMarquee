@@ -11,6 +11,10 @@ An ESP8266 based scrolling marquee written in MicroPython that can be controlled
 
 # Wiring:
 
+<p align="center">
+  <img src="https://github.com/joewez/WifiMarquee/blob/master/Pocket%20WiFi%20Marquee%20-%20Wiring%20Diagram.jpg" alt="Wiring"/>
+</p>
+
 **Wemos D1 Mini**  <-->  **MAX7219 LED Matrix**
  
     5V         <-->     VCC
