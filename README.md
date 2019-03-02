@@ -52,7 +52,7 @@ MicroPython MAX7219 Driver:
 
 https://github.com/mcauser/micropython-max7219
 
-DNS Server Code and Stucture:
+DNS Server Code and Structure:
 
 https://github.com/amora-labs/micropython-captive-portal
 
