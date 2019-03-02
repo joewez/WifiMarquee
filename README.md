@@ -1,6 +1,10 @@
 # WifiMarquee
 An ESP8266 based scrolling marquee written in MicroPython that can be controlled through a web-based wifi interface.
 
+<p align="center">
+  <img src="https://github.com/joewez/WifiMarquee/blob/master/display.gif" alt="Screenshot"/>
+</p>
+
 # Requirements:
 
   MicroPython 1.10 or later
