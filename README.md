@@ -32,16 +32,17 @@ When powered on, the device acts as an open WiFi access point that you can conne
 On a device with MicroPython installed, put the following files on the device using some method such as AMPY...
 
 ```
-  + root
-    + drivers
+  + /(root)
+    + /drivers
       + max7219m.py
-    + wwwroot
+    + /wwwroot
       + captive.html
       + marquee.html
     dnsquery.py
     main.py
     marquee.py
 ```
+
 For example, in Windows using AMPY, and the device is connected through COM3, you could use these commands...
 
 ```
@@ -55,6 +56,13 @@ ampy -p COM3 -b 115200 put wwwroot\captive.html /wwwroot/captive.html
 ampy -p COM3 -b 115200 put wwwroot\marquee.html /wwwroot/marquee.html
 ```
 
+Note: If installing on a fresh install of MicroPython, you may have to issue these commands at a REPL prompt before the new SSID takes affect...
+
+```
+import network
+ap = network.WLAN(network.AP_IF)
+ap.active(False)
+```
 
 # Enclosure  
   
