@@ -51,6 +51,9 @@ On a device with MicroPython installed, put the following files on the device us
     
     marquee.py
     
+# Enclosure  
+  
+https://www.thingiverse.com/thing:3464108  
   
 # Credit:
 
