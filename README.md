@@ -18,39 +18,44 @@ When powered on, the device acts as an open WiFi access point that you can conne
 </p>
 
 **Wemos D1 Mini**  <-->  **MAX7219 LED Matrix**
- 
-    5V         <-->     VCC
-    
+
+```
+    5V         <-->     VCC   
     GND        <-->     GND
-    
     D7 (MOSI)  <-->     DIN
-    
     D8         <-->     CS
-    
     D5 (SCK)   <-->     CLK
+```
 
 # Installation:
 
 On a device with MicroPython installed, put the following files on the device using some method such as AMPY...
 
+```
   + root
-  
     + drivers
-    
       + max7219m.py
-      
     + wwwroot
-    
       + captive.html
-      
       + marquee.html
-      
     dnsquery.py
-    
     main.py
-    
     marquee.py
-    
+```
+For example, in Windows using AMPY, and the device is connected through COM3, you could use these commands...
+
+```
+ampy -p COM3 -b 115200 put dnsquery.py /dnsquery.py
+ampy -p COM3 -b 115200 put main.py /main.py
+ampy -p COM3 -b 115200 put marquee.py /marquee.py
+ampy -p COM3 -b 115200 mkdir drivers
+ampy -p COM3 -b 115200 put drivers\max7219m.py /drivers/max7219m.py
+ampy -p COM3 -b 115200 mkdir wwwroot
+ampy -p COM3 -b 115200 put wwwroot\captive.html /wwwroot/captive.html
+ampy -p COM3 -b 115200 put wwwroot\marquee.html /wwwroot/marquee.html
+```
+
+
 # Enclosure  
   
 https://www.thingiverse.com/thing:3464108  
