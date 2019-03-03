@@ -5,6 +5,8 @@ An ESP8266 based scrolling marquee written in MicroPython that can be controlled
   <img src="https://github.com/joewez/WifiMarquee/blob/master/display.gif" alt="Screenshot"/>
 </p>
 
+When powered on, the device acts as an open WiFi access point that you can connect to with any modern device with a browser. The device will behave like a captive portal and direct you to a web page where you may enter your custom message. Just click the Submit button and your message should immediately begin scrolling on the device.
+
 # Requirements:
 
   MicroPython 1.10 or later
